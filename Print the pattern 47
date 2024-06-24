@@ -1,0 +1,67 @@
+Print the pattern
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print the pattern
+
+Sample Input 0
+
+5
+Sample Output 0
+
+* 
+* * * 
+* * * * * 
+* * * * * * * 
+* * * * * * * * *
+Sample Input 1
+
+10
+Sample Output 1
+
+* 
+* * * 
+* * * * * 
+* * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * * 
+* * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * 
+Submissions: 93
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+
+PROGRAM
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int n = scanner.nextInt();
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i * 2 - 1; j++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+}
+}     
+    
+
